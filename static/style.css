@@ -1,0 +1,135 @@
+/* 🌸 Soft Pastel UI for your Flower Classifier */
+
+body {
+    background: linear-gradient(135deg, #f0f0dd,#f4b6d0);
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease;
+}
+
+h1 {
+    color: #6554af;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+form {
+    background: #ffffffb8;
+    border: 2px solid #663e97;
+    border-radius: 25px;
+    padding: 25px 40px;
+    box-shadow: 0 6px 15px rgba(150, 150, 150, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(150, 150, 150, 0.2);
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #eef2ff;
+    border: 2px dashed #a2bfff;
+    border-radius: 10px;
+    color: #555;
+    text-align: center;
+    width: 230px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background: #e0ecff;
+    border-color: #8cb3ff;
+}
+
+button {
+    background: linear-gradient(#2799d7);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(150, 150, 150, 0.15);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #b365e4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(150, 150, 150, 0.25);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #5f4b8b;
+    background: #f7f1ff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(180, 150, 255, 0.1);
+}
+
+/* Add a gentle fade-in for results */
+.fade-in {
+    animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.result h2 {
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.result img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.result img:hover {
+  transform: scale(1.05);
+}
+
+#preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#preview img {
+  max-width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
